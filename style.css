@@ -1,0 +1,236 @@
+/*
+Theme Name: w3css-enfrte-blog
+Theme URI: http://github.com/enfrte
+Author: Leon Forte
+Author URI: https://github.com/enfrte
+Description: A simple blog using W3CSS design
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: a-simple-blog
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+w3css-enfrte-blog is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+body,h1,h2,h3,h4,h5 { font-family: "Raleway", sans-serif }
+h1.site-title a, h3.entry-title a, .entry-meta a, .asb-comment-link a, .more-link a, .comment-author a, .widget_tag_cloud a, .entry-title a, .entry-summary a {text-decoration:none;}
+img { visibility:hidden; /* but keep the area that would be taken up */ }
+.wp-post-image { width:100%; height:100%; /* height is also required to avoid stretching */ }
+.widget_search input { margin-bottom:0!important; }
+article.type-page { max-width:690px!important; }
+
+@media (max-width:600px) {
+	.asb-comments-notification p > span {
+		/* inc/template-tags.php comments */
+		padding:0 0 16px 0!important;
+		float:left!important;
+	}
+	#main > article {
+		margin-left: 0!important;
+		margin-right: 0!important;
+	}
+}
+
+/*
+	default styles for new widgets
+*/
+#secondary { visibility:hidden; /* Fix for old styles showing before the W3CSS classes are injected - get's set back to block in widget-w3css-injection.js */ }
+
+#secondary {color:#000;}
+
+#secondary .widget_calendar a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#secondary select { cursor:pointer; }
+
+#secondary ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+#secondary ul li {
+	padding:8px 16px 8px 16px;
+	border-bottom:1px solid #ddd;
+}
+
+#secondary ul li:last-child {
+	border-bottom:none;
+}
+
+#secondary tbody tr:hover, ul li:hover {
+	background-color:#ccc;
+}
+
+#secondary input {
+	padding:8px;
+	display:block;
+	border:1px solid #ddd;
+	width:100%;
+}
+
+#secondary input:-webkit-autofill, #secondary textarea:-webkit-autofill, #secondary select:-webkit-autofill {background-color:#ccc!important;}
+
+#secondary button,input,select,textarea {
+	font:inherit;
+	margin:0
+}
+
+#secondary optgroup { font-weight:bold }
+
+#secondary button,input {
+	overflow:visible
+}
+
+#secondary button, select {
+	text-transform:none
+}
+
+#secondary form {
+	padding:0px 16px 0px 16px;
+}
+
+#secondary input[type=checkbox], input[type=radio] {width:auto!important;}
+
+#secondary input[type=checkbox]:disabled, input[type=radio]:disabled {color:#aaa}
+
+#secondary input:not(:valid)~validate {
+	color:#f44336
+}
+
+#secondary a {
+	text-decoration:none;
+}
+
+#secondary .widget_meta a abbr {
+	text-decoration:none;
+}
+
+#secondary .widget_rss .rsswidget img {
+	position:relative;
+	top:50%;
+	transform:translateY(-35%);
+}
+
+#secondary .widget_search input[type="submit"] {
+	display:none;
+}
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* End WordPress Core */
