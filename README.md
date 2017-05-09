@@ -2,7 +2,7 @@
 
 ### Description
 
-This is my first WordPress theme. It's a simple blog using [W3CSS](https://www.w3schools.com/w3css/), [this template design](https://www.w3schools.com/w3css/tryw3css_templates_blog.htm), and [Underscore_S](http://underscores.me/). 
+This is my first WordPress theme. It's a simple blog using [W3CSS](https://www.w3schools.com/w3css/), [this template design](https://www.w3schools.com/w3css/tryw3css_templates_blog.htm), and [Underscore_S](http://underscores.me/). I've added some custom settings and a couple of custom widgets. 
 
 ## DISCLAIMER
 
