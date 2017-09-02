@@ -77,8 +77,7 @@ class a_simple_blog_About_Widget extends WP_Widget {
   public function update( $new_instance, $old_instance ) {
     $instance = $old_instance;
     $instance[ 'name' ] = strip_tags( $new_instance[ 'name' ] );
-		$instance[ 'description' ] = strip_tags( $new_instance[ 'description' ] );
-		//$instance[ 'image' ] = strip_tags( $new_instance[ 'image' ] );
+		$instance[ 'description' ] = strip_tags( $new_instance[ 'description' ], '<p><a><h1><h2><h3><h4><h5><h6><br><hr><b><em><i>' ); // 2nd parameter is allowed tags
 		$instance['image'] = ( ! empty( $new_instance['image'] ) ) ? $new_instance['image'] : '';
 
     return $instance;
