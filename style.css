@@ -24,6 +24,14 @@ img { visibility:hidden; /* but keep the area that would be taken up */ }
 .widget_search input { margin-bottom:0!important; }
 article.type-page { max-width:690px!important; }
 
+a { 
+	/* Handling Long URLs */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-word;
+ }
+
 @media (max-width:600px) {
 	.asb-comments-notification p > span {
 		/* inc/template-tags.php comments */
